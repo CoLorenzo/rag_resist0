@@ -34,9 +34,9 @@ def init_args():
                         help='name of the sparse model to use')
     parser.add_argument('-L', '--lambda', type=float, required=False, default=0.3, 
                         help='integration scalar for syntactic features. Only usable with --use_ensemble')
-    parser.add_argument('-k', '--k', type=float, required=False, default=20, 
+    parser.add_argument('-n', '--k', type=float, required=False, default=20,
                         help='Number of most relevant pages filtered in the pre-fetching phase')
-    parser.add_argument('-k', '--skip_table_extraction', action="store_true", default=False,
+    parser.add_argument('-f', '--fast', action="store_true", default=False,
                         help='skip table extraction phase')
 
     args = vars(parser.parse_args())

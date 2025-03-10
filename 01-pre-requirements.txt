@@ -1,0 +1,5 @@
+wheel
+psycopg2
+torch==2.4.0
+unstructured
+deepdoctection
